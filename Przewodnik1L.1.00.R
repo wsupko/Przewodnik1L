@@ -253,9 +253,6 @@ merge(tt, Proc.Games[Typ == 'Conceded'], by = c('ID', 'Klub'))[PositionName == '
                                                                  cp90 = (sum(Count)/sum(Minutes, na.rm = T))*90 ), FullName] [order(-ttlMin)]
 Imp.Lineup[, unique(Imię.i.nazwisko)]      
 
-
-
-
 #### Vizualization ####
 
 Plot.GPG <- ggplot(Imp.Games[, .(gpg = (BramkiGosp + BramkiGosc))]) + 
